@@ -19,7 +19,7 @@ return function(name, root_dir)
                 out_file = platform.is_win and "marksman.exe" or "marksman",
                 asset_file = coalesce(
                     when(platform.is.mac, "marksman-macos"),
-                    when(platform.is.linux_x64, "marksman-linux"),
+                    when(platform.is.linux_x64, "marksman-linux-x64"),
                     when(platform.is.win_x64, "marksman.exe")
                 ),
             }).with_receipt()
